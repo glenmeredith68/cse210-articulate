@@ -29,9 +29,10 @@ namespace Unit06.Game.Scripting
         {
             string theValueToDisplay = string.Format(format, data);
             
+
             Label label = (Label)cast.GetFirstActor(group);
             Text text = label.GetText();
-            text.SetValue(format);
+            text.SetValue();
             Point position = label.GetPosition();
             videoService.DrawText(text, position);
         }

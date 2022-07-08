@@ -77,6 +77,7 @@ namespace Unit04.Game.Casting
         /// </summary>
         /// <param name="maxX">The maximum x value.</param>
         /// <param name="maxY">The maximum y value.</param>
+        // in the greed game the guy only moves aling the bottom
         public void MoveNext(int maxX, int maxY)
         {
             int x = ((position.GetX() + velocity.GetX()) + maxX) % maxX;
